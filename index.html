@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
+		<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9" crossorigin="anonymous"></script>
+		<script>$(document).ready(function() { $('body').bootstrapMaterialDesign(); });</script>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+		<!-- Material Design for Bootstrap fonts and icons -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+	
+		<!-- Material Design for Bootstrap CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+	
+	<title>Upload Data</title>
+</head>
+<body>
+	<p></p>
+	<!-- <form action="/" method="POST" encType="multipart/form-data">
+		<input type="file" name="file" accept="*.csv" /><br/><br/>
+		<input type="submit" value="Upload Authors" />
+	</form> -->
+	<div class="container free-bird">
+			<div class="row">
+				<div class="col-md-8 col-lg-7 mx-auto float-none white z-depth-1 py-2 px-2">
+		
+					<!--Naked Form-->
+					<div class="card-body">
+
+						<form action="/" method="POST" encType="multipart/form-data" class="text-center border border-light p-5">
+								<h2 class="h2-responsive"><strong>Dump Data to DB</strong></h2>
+							<p class="h4 mb-4">Use the form below to upload a list of authors. Click <a href="/template">here</a> for an example template.</p>
+						
+							<!-- Name -->
+							<input type="text" id="defaultContactFormName" class="form-control mb-4" placeholder="Database Name" name="database">
+						
+							<!-- Email -->
+							<input type="text" id="defaultContactFormEmail" class="form-control mb-4" placeholder="Collection Name" name="collection">
+							<input type="file" name="file" accept="*.csv"  id="defaultContactFormEmail" class="form-control mb-4" placeholder="Collection Name" name="collection">
+							
+							
+						
+							<!-- Message -->
+						
+							
+						
+							<!-- Send button -->
+							<button class="btn btn-info btn-block" type="submit" value="Upload Data">Upload Data</button>
+						
+						</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	<!-- Default form contact -->
+</body>
+</html>
